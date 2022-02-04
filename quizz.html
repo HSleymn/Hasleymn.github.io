@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="stylequizz.css" rel="stylesheet" type="text/css">
+		<title> The Legend of Quizz </title>
+	</head>
+	<body>
+		<div class="jean-pierre">
+	
+			<div><h1 class="choco"><img src='climages/titre.jpg'></h1></div></div>
+
+		
+		<script type="text/javascript">
+/*
+elements[i] designe chaque bouton radio du formulaire dans l'ordre de leur creation
+checked contient true (ou 1) si le bouton correspondant est coche;
+la fonction accepte un nombre quelconque d'arguments
+*/
+function result() {
+var nbReponses= 4; // contient le nombre de reponses proposees (identique pour toutes les questions)
+var reponses= 0;
+var count= 0;
+for (i= 0; i < (arguments.length); i++) {
+reponses= reponses + document.qcm.elements[i * nbReponses].checked + document.qcm.elements[(i * nbReponses) + 1].checked;
+count= count + document.qcm.elements[(i * nbReponses) + arguments[i]].checked;
+}
+if (count < 2) {
+r =window.alert('Vous avez échoué, relisez vous.');
+} else {
+r =window.alert('Waw, vous êtes plutôt bon !');
+}
+ }
+</script>
+<FORM name="qcm" action="">
+<!-- les boutons d'un meme groupe doivent avoir le meme nom -->
+<div class="quizz" id="page-wrap">
+	<p>Comment s'appelle le donjon du désert Gérudo ?</p>
+ <input type= "radio" name= "q1">Vah'Rudania <input type= "radio" name ="q1">Vah'Naboris <input type="radio" name="q1"> Vah'Naborus  <input type="radio" name="q1"> Vah'Radunio <br></br>
+<img src="climages/lynel.jpg" class="lynoul" />
+<br></br>
+<p>Quel est cette créature ?</p>
+<input type= "radio" name= "q2">Un Lynel <input type= "radio" name= "q2">Un Lynoul <input type="radio" name="q2"> Un Lanelle <input type="radio" name="q2"> Un Lyanel 
+<br></br>
+<p>Quel module permet de déplacer les objets métalliques ?</p>
+<input type= "radio" name= "q3">Le Magnetis <input type= "radio" name= "q3">Le Polaris <input type="radio" name="q3"> Le Magnatis <input type="radio" name="q3"> Le Poloris 
+<br></br>
+<p>Quel est la particuliarité de ce jeu ?</p>
+<input type= "radio" name= "q4">Le Monde Ouvert <input type= "radio" name= "q4">La fonctionnalité de faire des triple salto arrière en jouant de la flûte traversière
+ <input type="radio" name="q4"> Sa difficulté <input type="radio" name="q4"> La 3D </br>
+ <br></br>
+ <p>Comment se nomme l'épée ultime ?</p>
+<input type= "radio" name= "q5">Master Sword <input type= "radio" name= "q5">Épée de Légende <input type="radio" name="q5"> Sabre Légendaire <input type="radio" name="q5"> Épée Légendaire </br>
+<br></br>
+<p>Comment se nomme le bouclier ultime</p>
+<input type= "radio" name= "q6">Bouclier Hylien <input type= "radio" name= "q3">Bouclier d'Hylia <input type="radio" name="q6"> Bouclier Hyloire <input type="radio" name="q6"> Bouclier Hyllusoire </br>
+<br></br>
+
+
+<!-- passer l'ordre du bouton correspondant a la reponse exacte, en commencant par 0 -->
+<input type="button" value="Validation" onclick= "result(2, 1, 1, 2, 1);"><input type="reset" value="Recommencer">
+</div>
+</form> 
+<div class="jean-pierre">
+	
+	
+		<div class="jean-michel">
+	<ul>
+		<li class="dropdown">
+			<a href="index.html" class="dropbtn" id="hiha">ACCUEIL</a>
+
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" id="hiho"> COMBAT</a>
+		  <div class="dropdown-content">
+			<a href="combat/épée.html">Les Épées</a>
+			<a href="combat/boucliers.html">Les Boucliers</a>
+			<a href="combat/arcs.html">Les Arcs</a>
+		  </div>
+
+		  <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn" id="hiho">TABLETTE SHEIKAH</a>
+		  <div class="dropdown-content">
+			<a href="tablette/modules.html">Les Modules</a>
+			<a href="tablette/map.html">La Map</a>
+		  </div>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" id="hiho">UTILITAIRE</a>
+		  <div class="dropdown-content">
+			<a href="utilitaire/mobs.html">Les Créatures</a>
+			<a href="utilitaire/donjons.html">Les Donjons</a>
+		  </div>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" id="hiho">COMMUNAUTÉ</a>
+		  <div class="dropdown-content">
+			<a href="communauté/speedrun.html">SpeedRun</a>
+			<a href="communauté/lecent.html">Le 100%</a>
+		  </div>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" id="hiho">À PROPOS</a>
+		  <div class="dropdown-content">
+			<a href="apropos/credits.html"> Crédits</a>
+			<a href="apropos/codegit.html">Accéder au code</a>
+		  </div>
+		</li>
+	  </ul>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>

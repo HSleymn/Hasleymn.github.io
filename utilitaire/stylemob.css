@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  html{
+    background: url("../climages/fond.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  
+  body, html {
+    height: auto;
+    margin: 0;
+  }
+  
+    p, a , h1, h2{
+      color : white;
+    }
+  
+  
+  .prologue{
+    width: 1500px;
+    padding: 20px; 
+    background: black; 
+    opacity: 0.7;
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  
+  #blel{
+    color : white
+    
+  }
+  h2 {
+  font-size: 1000%;
+  font-weight: bold;
+   }
+  
+   
+ 
+    
+   .jean-pierre {
+      text-align: center;
+      background-color: #333;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      display: flex;
+  flex-direction: column;
+      z-index: 1000;
+  
+    }
+    
+  
+    
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    min-width: 340.5px;
+  
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #hiha{
+    width: 200px;
+  }
+  
+  #hiho{
+    width: 340.5px;
+  }
+  
+  .haha{
+    text-align: center;
+    font-size: 50px;
+  }
+  .poto{
+    opacity: auto;
+    border-radius: 12px;
+    height: 500px;
+    width: 850px;
+    margin-left: 230px;
+    margin-bottom: 70px;
+  }
+  #page-wrap { 
+    width: 1400px;
+    height: auto;
+    margin: 50px auto; 
+    padding: 20px; 
+    background: black; 
+    opacity: 0.7;
+  }
+  
+  p { 
+    font: 15px/2 Georgia, Serif; 
+    margin: 0 0 30px 0; 
+    font-size: 28px;
+    text-indent: 40px; 
+  }
+  
+  
+  
+  
+  .geo{
+    margin-left: 10px;
+  }
+  
+  .quizimg{
+    margin-left: 500px;
+    margin-top: 0px;
+  }
+  
+  .bubulle{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .bottompg{
+    float: left;
+    margin-top: 250px;
+    background-color: #333;
+    width: 1900px;
+  
+  }
+  
+  .textbottom{
+    font: 20px Georgia, Serif; 
+    color: white;
+  margin: 15px;
+  
+  }
+  .michou, .inox, .bouzi, .plats, .anime, .geo, .quizimg{
+    transition: transform 0.5s; 
+  }
+  .michou:hover, .inox:hover, .bouzi:hover, .plats:hover, .anime:hover, .geo:hover, .quizimg:hover{
+    transform: scale(1.1); 
+  }
+  
+  .michou{
+    background: url("climages/icon1.jpg") no-repeat center center ; 
+    background-size: cover;
+    width: 999px;
+    height: 999px;
+    width: 500px;
+    height: 300px;
+    list-style-type: none;
+    text-shadow: none;
+  text-align: center;
+    border: none;
+    font-size: 72px;
+    font-style: bold;
+    color: white;
+    border-radius: 18px;
+  }
+  
+  .inox{
+    background: url("climages/icon2.jpg") no-repeat center center ; 
+    background-size: cover;
+    width: 999px;
+    height: 999px;
+    width: 500px;
+    height: 300px;
+    list-style-type: none;
+    text-shadow: none;
+  text-align: center;
+    border: none;
+    font-size: 72px;
+    font-style: bold;
+    color: white;
+    border-radius: 18px;
+  
+  }
+  
+  .bouzi{
+    background: url("climages/icon3.jpg") no-repeat center center ; 
+    background-size: cover;
+    width: 999px;
+    height: 999px;
+    width: 500px;
+    height: 300px;
+    list-style-type: none;
+    text-shadow: none;
+  text-align: center;
+    border: none;
+    font-size: 72px;
+    font-style: bold;
+    color: white;
+    border-radius: 18px;
+  
+  }
+
+  
+  .ennemis{
+    width: 750px;
+    height: 400px;
+    margin-left: 30%;
+    border-radius: 24px;
+  }
